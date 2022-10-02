@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gjcode"
+version = "0.0.1"
+authors = [
+  { name="Greg Chetcuti", email="greg@chetcuti.com" },
+]
+license = { text = "MIT" }
+description = "A collection of my personal Python code"
+readme = "README.md"
+# dependencies = [
+#     "random"
+# ]
+requires-python = ">=3.7"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/chetcuti/gjcode"
+"Bug Tracker'" = "https://github.com/chetcuti/gjcode/issues"
+
+[tool.bumpver]
+current_version = "0.0.1"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = false
+tag =  false
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"src/gjcode/__init__.py" = ["{version}"]
+
