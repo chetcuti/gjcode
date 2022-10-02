@@ -39,4 +39,3 @@ def print_results(rolls, results):
         row = "#" + str(each[0]) + " - " + f"{each[1]:,}" + " (" + percent + "%)"
         print(row + " -- WINNER!") if row_count == 0 else print(row)
         row_count += 1
-
