@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gjcode"
-version = "0.0.5"
+version = "0.0.6"
 authors = [
   { name="Greg Chetcuti", email="greg@chetcuti.com" },
 ]
@@ -27,7 +27,7 @@ classifiers = [
 "Bug Tracker'" = "https://github.com/chetcuti/gjcode/issues"
 
 [tool.bumpver]
-current_version = "0.0.5"
+current_version = "0.0.6"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message = "Bump version {old_version} -> {new_version}"
 commit = false
