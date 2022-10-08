@@ -1,3 +1,5 @@
 from . import rnd
 
-__version__ = "0.0.7"
+__all__ = ["rnd"]
+
+__version__ = "0.0.11"
