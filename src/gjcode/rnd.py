@@ -5,7 +5,7 @@ default_rolls = 100000
 default_details = 0
 
 
-def rand(options=default_options, rolls=default_rolls, details=default_details):
+def rnd(options=default_options, rolls=default_rolls, details=default_details):
     """Run the main randomizer program (Return Value)"""
     sorted_results = get_sorted_results(options, rolls)
 
@@ -17,9 +17,9 @@ def rand(options=default_options, rolls=default_rolls, details=default_details):
     return result_return
 
 
-def rand_print(options=default_options, rolls=default_rolls, details=default_details):
+def rnd_print(options=default_options, rolls=default_rolls, details=default_details):
     """Run the main randomizer program (Print)"""
-    print(rand(options, rolls, details))
+    print(rnd(options, rolls, details))
 
 
 def get_headers(options, rolls):
